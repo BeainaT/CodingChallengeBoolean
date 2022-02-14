@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 13px;
+}
+
+/* stile background in trasparenza */
+.background {
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin:auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 80px 60px;
+}
+
+header, nav {
+  text-align: center;
+}
+
+h2 {
+  color: rgb(0, 221, 0);
+}
+
+img.logo {
+  width: 150px;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(0, 221, 0);
+  padding: 3px;
+}
+
+/* caratteristiche bottoni input nel nav */
+nav input {
+  font-size: 9px;
+  margin: 1px;
+  padding: 1px;
+}
+
+section {
+  color: white;
+  margin-top: 20px;
+}
+
+/* add arrows */
+.site::before {
+  content: "\21A6";
+}
+
+/* caratteristiche comuni carica batterie */
+.charge {
+  height: 20px;
+  border-radius: 3px;
+}
+
+/* stile mid battery */
+.item-1 .charge {
+  width: 250px;
+  background-color: rgb(245, 180, 83);
+}
+
+/* stile full battery */
+.item-2 .charge {
+  width: 400px;
+  background-color: rgb(30, 195, 30);
+}
+
+/* stile low battery */
+.item-3 .charge {
+  width: 100px;
+  background-color: rgb(190, 65, 65);
+}
